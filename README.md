@@ -1,72 +1,85 @@
 # Java Programming Internship — Next Gen Software Hub
 
-A personal repository for documenting and submitting the work completed during the **4-week Java Programming Internship** at **Next Gen Software Hub**.
-
-## About
-
-This repository is intended to keep the internship exercises, Java source code, notes, and weekly progress organised in one place.
+A personal repository for documenting and submitting work completed during the **4-week Java Programming Internship** at **Next Gen Software Hub**.
 
 ## Technology
 
 - **Language:** Java
-- **Tools:** JDK and an IDE or code editor (such as VS Code)
+- **Tools:** JDK, VS Code / IDE
 - **Version control:** Git and GitHub
 
 ## Repository structure
-
-The folders below are the suggested structure for organising the work as it is added. Only files that have actually been completed and tested should be marked as complete.
 
 ```text
 NextGen-Java-Internship/
 ├── README.md
 ├── .gitignore
-├── Week-1/
-│   └── Java-Basics/
-├── Week-2/
-├── Week-3/
-└── Week-4/
+├── Week1_JavaBasics/
+│   ├── JavaBasics.java
+│   └── MarksCalculator.java
+├── Week2_Calculator/
+│   ├── StudentConstructor.java
+│   ├── InheritanceDemo.java
+│   ├── MethodOverloading.java
+│   ├── MethodOverriding.java
+│   ├── EncapsulationDemo.java
+│   ├── AbstractionDemo.java
+│   ├── InterfaceDemo.java
+│   ├── Calculator.java
+│   └── BankingSystem.java
+├── Week-3/   (upcoming)
+└── Week-4/   (upcoming)
 ```
 
-## Progress tracker
+## Weekly progress
 
-| Area | Progress |
-|---|---|
-| Java basics | Practised locally; source files still need to be added here |
-| Marks calculator | Worked on locally; source file still needs to be added here |
-| Remaining internship tasks | To be added after checking the official task list |
+| Week | Topics / deliverables | Repository status |
+|---|---|---|
+| Week 1 | Java basics, variables, data types, and marks calculator | Source files uploaded |
+| Week 2 | Classes, constructors, inheritance, polymorphism, encapsulation, abstraction, interfaces; calculator and banking mini-projects | Source files uploaded |
+| Week 3 | Exception handling, file handling, multithreading, and mini-projects | Upcoming |
+| Week 4 | JDBC, MySQL, CRUD, and final project work | Upcoming |
 
-> This tracker is intentionally conservative: a task is not shown as submitted or completed in this repository until its source files and testing details are committed.
+## Week 1 — Java basics
 
-## How to run a Java program
+- `JavaBasics.java`: variables, data types, and console output.
+- `MarksCalculator.java`: reads subject marks, calculates total and average, and displays a grade.
 
-1. Install a JDK and confirm that `java -version` and `javac -version` work.
-2. Open the relevant `.java` file in a terminal.
-3. Compile it:
+## Week 2 — Object-oriented programming
 
-   ```bash
-   javac FileName.java
-   ```
+- `StudentConstructor.java`: constructor example.
+- `InheritanceDemo.java`: inheritance using `extends`.
+- `MethodOverloading.java` and `MethodOverriding.java`: compile-time and runtime polymorphism.
+- `EncapsulationDemo.java`: private data and controlled access.
+- `AbstractionDemo.java`: abstract class and method.
+- `InterfaceDemo.java`: interface implementation.
+- `Calculator.java`: menu-driven arithmetic calculator.
+- `BankingSystem.java`: deposit, withdrawal, and balance checking.
 
-4. Run the class (use the class name, without `.java`):
+## How to compile and run
 
-   ```bash
-   java ClassName
-   ```
+For a Week 1 file (no package declaration), open the Week 1 folder and run:
 
-For programs containing packages or multiple classes, follow the folder/package structure used by that program.
+```bash
+javac JavaBasics.java
+java JavaBasics
+```
+
+For Week 2 files, run commands from the repository root. For example:
+
+```bash
+javac Week2_Calculator/Calculator.java
+java Week2_Calculator.Calculator
+```
 
 ## Submission checklist
 
-- [ ] Add the actual Java source files for each assigned task.
-- [ ] Test each program and record any required sample input/output.
-- [ ] Organise files under the correct week.
-- [ ] Verify that the repository contains all deliverables required by the internship instructions.
-- [ ] Review the final GitHub repository link before submission.
+- [x] Upload Week 1 Java basics and marks calculator source files.
+- [x] Upload Week 2 OOP examples and mini-projects.
+- [ ] Add and verify any remaining Week 1/Week 2 exercise files required by the official task sheet.
+- [ ] Complete and upload Week 3 and Week 4 deliverables.
+- [ ] Verify the final repository against the internship's official submission instructions.
 
 ## Author
 
 **K S Shravani**
-
----
-
-This repository is maintained for learning, practice, and internship submission purposes.

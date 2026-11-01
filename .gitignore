@@ -11,3 +11,6 @@ Thumbs.db
 bin/
 build/
 target/
+.env
+*.env
+lib/*.jar

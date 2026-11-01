@@ -16,7 +16,9 @@ NextGen-Java-Internship/
 ├── .gitignore
 ├── Week1_JavaBasics/
 │   ├── JavaBasics.java
-│   └── MarksCalculator.java
+│   ├── Student.java
+│   ├── MarksCalculator.java
+│   └── MarksInput.java
 ├── Week2_Calculator/
 │   ├── StudentConstructor.java
 │   ├── InheritanceDemo.java
@@ -35,15 +37,17 @@ NextGen-Java-Internship/
 
 | Week | Topics / deliverables | Repository status |
 |---|---|---|
-| Week 1 | Java basics, variables, data types, and marks calculator | Source files uploaded |
-| Week 2 | Classes, constructors, inheritance, polymorphism, encapsulation, abstraction, interfaces; calculator and banking mini-projects | Source files uploaded |
+| Week 1 | Java basics, variables, data types, classes and objects, marks input and calculation | Source files uploaded |
+| Week 2 | Constructors, inheritance, polymorphism, encapsulation, abstraction, interfaces; calculator and banking mini-projects | Source files uploaded |
 | Week 3 | Exception handling, file handling, multithreading, and mini-projects | Upcoming |
 | Week 4 | JDBC, MySQL, CRUD, and final project work | Upcoming |
 
 ## Week 1 — Java basics
 
 - `JavaBasics.java`: variables, data types, and console output.
-- `MarksCalculator.java`: reads subject marks, calculates total and average, and displays a grade.
+- `Student.java`: class, object, fields, and a display method.
+- `MarksCalculator.java`: calculates total, average, and grade from subject marks.
+- `MarksInput.java`: accepts student details and marks using `Scanner`, then calculates total, average, and grade.
 
 ## Week 2 — Object-oriented programming
 
@@ -58,11 +62,11 @@ NextGen-Java-Internship/
 
 ## How to compile and run
 
-For a Week 1 file (no package declaration), open the Week 1 folder and run:
+For Week 1 files (no package declaration), open the Week 1 folder and run:
 
 ```bash
-javac JavaBasics.java
-java JavaBasics
+javac Student.java
+java Student
 ```
 
 For Week 2 files, run commands from the repository root. For example:
@@ -74,9 +78,9 @@ java Week2_Calculator.Calculator
 
 ## Submission checklist
 
-- [x] Upload Week 1 Java basics and marks calculator source files.
+- [x] Upload Week 1 Java basics and practice source files.
 - [x] Upload Week 2 OOP examples and mini-projects.
-- [ ] Add and verify any remaining Week 1/Week 2 exercise files required by the official task sheet.
+- [ ] Confirm all files against the official internship task sheet.
 - [ ] Complete and upload Week 3 and Week 4 deliverables.
 - [ ] Verify the final repository against the internship's official submission instructions.
 

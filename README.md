@@ -1,12 +1,13 @@
 # Java Programming Internship — Next Gen Software Hub
 
-A personal repository for documenting and submitting work completed during the **4-week Java Programming Internship** at **Next Gen Software Hub**.
+A personal repository documenting work completed during the **4-week Java Programming Internship** at **Next Gen Software Hub**.
 
 ## Technology
 
 - **Language:** Java
-- **Tools:** JDK, VS Code / IDE
-- **Version control:** Git and GitHub
+- **Database:** MySQL
+- **Connectivity:** JDBC (MySQL Connector/J)
+- **Tools:** JDK, VS Code, MySQL Workbench, Git and GitHub
 
 ## Repository structure
 
@@ -14,40 +15,29 @@ A personal repository for documenting and submitting work completed during the *
 NextGen-Java-Internship/
 ├── README.md
 ├── .gitignore
+├── JDBCTest.java
 ├── Week1_JavaBasics/
-│   ├── JavaBasics.java
-│   ├── Student.java
-│   ├── MarksCalculator.java
-│   └── MarksInput.java
 ├── Week2_Calculator/
-│   ├── StudentConstructor.java
-│   ├── InheritanceDemo.java
-│   ├── MethodOverloading.java
-│   ├── MethodOverriding.java
-│   ├── EncapsulationDemo.java
-│   ├── AbstractionDemo.java
-│   ├── InterfaceDemo.java
-│   ├── Calculator.java
-│   └── BankingSystem.java
-├── Week-3/   (upcoming)
-└── Week-4/   (upcoming)
+├── Week3_ExceptionHandling/
+└── Week4_JDBC/
+    └── InternshipDB.sql
 ```
 
 ## Weekly progress
 
-| Week | Topics / deliverables | Repository status |
+| Week | Topics / deliverables | Status |
 |---|---|---|
-| Week 1 | Java basics, variables, data types, classes and objects, marks input and calculation | Source files uploaded |
-| Week 2 | Constructors, inheritance, polymorphism, encapsulation, abstraction, interfaces; calculator and banking mini-projects | Source files uploaded |
-| Week 3 | Exception handling, file handling, multithreading, and mini-projects | Upcoming |
-| Week 4 | JDBC, MySQL, CRUD, and final project work | Upcoming |
+| Week 1 | Java basics, variables, data types, classes and objects, marks input and calculation | Uploaded |
+| Week 2 | Constructors, inheritance, polymorphism, encapsulation, abstraction, interfaces; calculator and banking mini-projects | Uploaded |
+| Week 3 | Exception handling, file handling, multithreading, Student Record Manager and Task Simulator | Uploaded |
+| Week 4 | MySQL database setup, JDBC driver configuration and Java connection test | In progress |
 
 ## Week 1 — Java basics
 
 - `JavaBasics.java`: variables, data types, and console output.
 - `Student.java`: class, object, fields, and a display method.
 - `MarksCalculator.java`: calculates total, average, and grade from subject marks.
-- `MarksInput.java`: accepts student details and marks using `Scanner`, then calculates total, average, and grade.
+- `MarksInput.java`: accepts student details and marks using `Scanner`.
 
 ## Week 2 — Object-oriented programming
 
@@ -60,29 +50,38 @@ NextGen-Java-Internship/
 - `Calculator.java`: menu-driven arithmetic calculator.
 - `BankingSystem.java`: deposit, withdrawal, and balance checking.
 
-## How to compile and run
+## Week 3 — Exception handling, files and threads
 
-For Week 1 files (no package declaration), open the Week 1 folder and run:
+- Exception handling: try/catch/finally, multiple catch, throw/throws, and custom exceptions.
+- File handling: create, write, read, and append.
+- Mini-project: Student Record Manager.
+- Multithreading: Thread, Runnable, and task simulation.
 
-```bash
-javac Student.java
-java Student
+## Week 4 — JDBC and MySQL
+
+- `JDBCTest.java`: tests a Java connection to the local `InternshipDB` database using JDBC.
+- `Week4_JDBC/InternshipDB.sql`: creates the database and students table and inserts sample records.
+- MySQL Connector/J is a local dependency and is intentionally excluded from GitHub. Download it from the [official MySQL Connector/J page](https://dev.mysql.com/downloads/connector/j/) and place the JAR in the local `lib` folder.
+
+### Run the JDBC connection test (Windows PowerShell)
+
+Set the database password in the current terminal session:
+
+```powershell
+$env:DB_PASSWORD = Read-Host "Enter MySQL root password"
+javac -cp ".;lib\\mysql-connector-j-<version>.jar" JDBCTest.java
+java -cp ".;lib\\mysql-connector-j-<version>.jar" JDBCTest
 ```
 
-For Week 2 files, run commands from the repository root. For example:
-
-```bash
-javac Week2_Calculator/Calculator.java
-java Week2_Calculator.Calculator
-```
+Replace `<version>` with the downloaded Connector/J version. Never commit database passwords or other credentials.
 
 ## Submission checklist
 
 - [x] Upload Week 1 Java basics and practice source files.
 - [x] Upload Week 2 OOP examples and mini-projects.
-- [ ] Confirm all files against the official internship task sheet.
-- [ ] Complete and upload Week 3 and Week 4 deliverables.
-- [ ] Verify the final repository against the internship's official submission instructions.
+- [x] Upload Week 3 exception handling, file handling and multithreading exercises.
+- [ ] Complete JDBC CRUD operations and Week 4 project.
+- [ ] Verify all deliverables against the official internship instructions.
 
 ## Author
 

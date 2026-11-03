@@ -16,4 +16,4 @@ Thumbs.db
 application-local.properties
 
 # Dependency JARs should be installed locally, not committed
-lib/*.jar
+*.jar

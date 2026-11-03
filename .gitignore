@@ -1,16 +1,19 @@
+# Java build output
 *.class
-*.log
-*.tmp
-.DS_Store
-Thumbs.db
+out/
+target/
+
+# IDE and OS files
 .vscode/
 .idea/
-.settings/
-.project
-.classpath
-bin/
-build/
-target/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local configuration and secrets
 .env
-*.env
+*.local
+application-local.properties
+
+# Dependency JARs should be installed locally, not committed
 lib/*.jar

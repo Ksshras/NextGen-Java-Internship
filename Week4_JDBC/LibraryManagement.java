@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class LibraryManagement {
     private static final String DB_URL =
-            "jdbc:mysql://localhost:3306/internship_db";
+            "jdbc:mysql://localhost:3306/InternshipDB";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "change_me";
 

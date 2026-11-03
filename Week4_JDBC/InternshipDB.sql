@@ -16,3 +16,17 @@ VALUES
     ('Priya', 'CSE003', 'Computer Science', 78),
     ('Arjun', 'CSE004', 'Computer Science', 88),
     ('Sneha', 'CSE005', 'Computer Science', 95);
+
+-- Library table used by LibraryManagement.java
+CREATE TABLE IF NOT EXISTS books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    author VARCHAR(120) NOT NULL
+);
+
+INSERT INTO books (title, author)
+SELECT 'Effective Java', 'Joshua Bloch'
+WHERE NOT EXISTS (
+    SELECT 1 FROM books
+    WHERE title = 'Effective Java' AND author = 'Joshua Bloch'
+);
